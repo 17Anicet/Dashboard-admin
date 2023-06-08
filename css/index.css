@@ -56,6 +56,29 @@ section {
   color: var(--white);
 }
 
+.bloc-item {
+  padding: 15px;
+}
+
+.bloc-user {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+}
+.bloc-user .user {
+  border-radius: 5px;
+  padding: 5px 5px;
+  border: 2px solid var(--blending_blue);
+}
+.bloc-user div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  gap: 10px;
+  align-items: center;
+}
+
 *,
 ::before,
 ::after {
@@ -67,6 +90,18 @@ section {
 a {
   text-decoration: none;
   align-items: center;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-family: "Sen", sans-serif;
+}
+
+p img {
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid var(--blending_blue);
 }
 
 button {

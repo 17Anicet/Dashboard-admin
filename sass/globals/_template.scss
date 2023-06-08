@@ -49,3 +49,25 @@ section{
         }
     }
 }
+
+.bloc-item{
+    padding: 15px
+}
+
+.bloc-user{
+    @include display_flex;
+    justify-content: space-between;
+
+    .user{
+        border-radius: 5px;
+        padding: 5px 5px;
+        border: 2px solid var(--blending_blue);
+    }
+
+    div{
+        @include display_flex;
+        gap: 10px;
+        align-items: center;
+    }
+}
+

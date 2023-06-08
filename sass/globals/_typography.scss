@@ -15,6 +15,20 @@ a{
     align-items: center;
 }
 
+//pour les inputs
+input{
+    border: none;
+    outline: none;
+    font-family: u.$font;
+}
+
+//pour les images
+p img{
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid var(--blending_blue)
+}
+
 
 //pour notre boutton
 button{
