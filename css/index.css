@@ -111,6 +111,7 @@ button {
   border-radius: 20px;
   margin-top: 240px;
   margin-left: 20px;
+  align-items: center;
   font-family: "Sen", sans-serif;
   border: 1px solid var(--white);
   background: none;
