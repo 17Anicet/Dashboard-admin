@@ -101,6 +101,10 @@ section {
   font-weight: bold;
   color: var(--blending_blue);
 }
+.cercle-progress circle {
+  fill: none;
+  stroke: var(--blending_blue);
+}
 
 *,
 ::before,
