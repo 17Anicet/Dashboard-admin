@@ -3,6 +3,8 @@
   --white: #fff;
   --blending_blue: #000620;
   --black: #0a0a0a;
+  --shadow1: #000015;
+  --shadow2: #000015;
 }
 
 body {
@@ -77,6 +79,20 @@ section {
   gap: 10px;
   gap: 10px;
   align-items: center;
+}
+
+.cercle-progress .progress {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 9px;
+  box-shadow: 6px 6px 10px 10px var(--shadow);
+}
+.cercle-progress .progress-bar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid var(--blending_blue);
 }
 
 *,
