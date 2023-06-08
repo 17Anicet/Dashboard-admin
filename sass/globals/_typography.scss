@@ -1,0 +1,31 @@
+@use "../utils/mixins" as *;
+
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//pour les liens
+a{
+    text-decoration: none;
+    align-items: center;
+}
+
+
+//pour notre boutton
+button{
+    @include display_flex;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-top: 240px;
+    margin-left: 20px;
+    border: 1px solid var(--white);
+    background: none;
+
+    a,i{
+        color: var(--white);
+    }
+}

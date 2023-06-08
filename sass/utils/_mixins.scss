@@ -1,0 +1,7 @@
+//Pour la position des nos éléments
+
+@mixin display_flex{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}

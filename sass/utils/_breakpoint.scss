@@ -1,0 +1,14 @@
+//ce point concerne notre MEDIA QUERY dans différents formats à travailler
+
+$breakpoint-up: (
+    mobile: 480px,
+    tablet: 768px,
+    laptop: 980px,
+    desktop: 1024px
+);
+
+@mixin breakpoint($size){
+    @media (max-width: map-get($breakpoint,$size)){
+        @content
+    }
+}
