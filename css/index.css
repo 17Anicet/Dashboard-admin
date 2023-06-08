@@ -24,7 +24,7 @@ section {
 .bloc-nav nav .dashboard {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 10px;
   color: var(--black);
   background-color: var(--white);
   padding: 8px;
@@ -37,7 +37,7 @@ section {
 .bloc-nav nav div {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 10px;
   margin-top: 15px;
   margin-left: 15px;
   padding: 8px;
@@ -72,14 +72,23 @@ a {
 button {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 10px;
   padding: 8px 15px;
   border-radius: 20px;
   margin-top: 240px;
   margin-left: 20px;
+  font-family: "Sen", sans-serif;
   border: 1px solid var(--white);
   background: none;
 }
 button a, button i {
   color: var(--white);
+}
+button:hover {
+  border: none;
+  background-color: var(--white);
+}
+button:hover a, button:hover i {
+  color: var(--black);
+  font-weight: bolder;
 }/*# sourceMappingURL=index.css.map */

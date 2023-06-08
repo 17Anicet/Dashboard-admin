@@ -1,4 +1,5 @@
 @use "../utils/mixins" as *;
+@use '../utils/font' as u;
 
 *,
 ::before,
@@ -22,10 +23,19 @@ button{
     border-radius: 20px;
     margin-top: 240px;
     margin-left: 20px;
+    font-family: u.$font;
     border: 1px solid var(--white);
     background: none;
 
     a,i{
         color: var(--white);
+    }
+    &:hover{
+        border: none;
+        background-color: var(--white);
+        a,i{
+            color: var(--black);
+            font-weight: bolder;
+        }
     }
 }
