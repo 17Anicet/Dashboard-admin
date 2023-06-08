@@ -101,7 +101,6 @@ input {
 p img {
   width: 25px;
   border-radius: 50%;
-  border: 1px solid var(--blending_blue);
 }
 
 button {
