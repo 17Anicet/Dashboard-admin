@@ -81,37 +81,6 @@ section {
   align-items: center;
 }
 
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }
-}
-.circle-svg {
-  display: block;
-  max-height: 80px;
-}
-
-.circle-svg text {
-  text-align: center;
-  color: black;
-  font-weight: bolder;
-  font-size: 8px;
-}
-
-.circle-svg path.percent {
-  stroke: var(--blending_blue);
-  fill: none;
-  stroke-width: 4;
-  stroke-linecap: round;
-  animation: progress 1s ease-out forwards;
-}
-
-.circle-svg path.around {
-  stroke: #c4c4c4;
-  fill: none;
-  stroke-width: 2.8;
-}
-
 *,
 ::before,
 ::after {
