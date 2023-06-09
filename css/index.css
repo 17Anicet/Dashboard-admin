@@ -82,13 +82,13 @@ section {
 }
 
 .skill {
-  width: 100px;
-  height: 100px;
+  width: 160px;
+  height: 160px;
   position: relative;
 }
 .skill .outer {
-  width: 100px;
-  height: 100px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   padding: 20px;
   box-shadow: 1px 1px 4px -1px black, -1px -1px 4px -1px gray;
@@ -120,7 +120,7 @@ section {
 }
 @keyframes anim {
   100% {
-    stroke-dashoffset: 157.5;
+    stroke-dashoffset: 0;
   }
 }
 
