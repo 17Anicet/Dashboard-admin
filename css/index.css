@@ -105,10 +105,17 @@ section {
 .skill .inner #number {
   font-weight: bolder;
 }
-.skill .circle {
+.skill svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.skill svg circle {
   fill: none;
   stroke: var(--blending_blue);
   stroke-width: 20px;
+  stroke-dasharray: 450;
+  stroke-dashoffset: 300;
 }
 
 *,

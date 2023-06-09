@@ -97,10 +97,17 @@ section{
             font-weight: bolder;
         }            
     }
-    .circle{
-        fill: none;
-        stroke: var(--blending_blue);
-        stroke-width: 20px;
+    svg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        circle{
+            fill: none;
+            stroke: var(--blending_blue);
+            stroke-width: 20px;
+            stroke-dasharray: 450;
+            stroke-dashoffset: 300;
+        }
     }
 }
   
