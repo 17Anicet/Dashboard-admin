@@ -82,15 +82,15 @@ section {
 }
 
 .skill {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   position: relative;
 }
 .skill .outer {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  padding: 10px;
+  padding: 20px;
   box-shadow: 1px 1px 4px -1px black, -1px -1px 4px -1px gray;
 }
 .skill .inner {
@@ -99,7 +99,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
+  border-radius: 50%;
   box-shadow: inset 1px 1px 4px -1px black, inset -1px -1px 4px -1px gray;
 }
 .skill .inner #number {
@@ -113,14 +113,14 @@ section {
 .skill svg circle {
   fill: none;
   stroke: var(--blending_blue);
-  stroke-width: 8px;
+  stroke-width: 20px;
   stroke-dasharray: 450;
   stroke-dashoffset: 450;
-  animation: anim 2s forwards;
+  animation: anim 2s linear forwards;
 }
 @keyframes anim {
   100% {
-    stroke-dashoffset: 157;
+    stroke-dashoffset: 157.5;
   }
 }
 
