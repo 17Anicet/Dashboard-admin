@@ -63,9 +63,7 @@
             <div class="skill">
                 <div class="outer">
                     <div class="inner">
-                        <div id="number">
-                            65%
-                        </div>
+                        <div id="number"></div>
                     </div>
                 </div>
                 <svg width="120px" height="120px">
@@ -82,5 +80,19 @@
     </section>
 
 </body>
+<script>
+    let number = document.getElementById('number');
+    let counter = 0;
+
+    setInterval(()=>{
+        if (counter==65){
+            clearInterval;
+        }
+        else{
+            counter += 1;
+            number.innerHTML= `${counter}%`;
+        }
+    }, 30);
+</script>
 
 </html>
