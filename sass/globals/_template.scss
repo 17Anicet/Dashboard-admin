@@ -97,5 +97,10 @@ section{
             font-weight: bolder;
         }            
     }
+    .circle{
+        fill: none;
+        stroke: var(--blending_blue);
+        stroke-width: 20px;
+    }
 }
   

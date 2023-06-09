@@ -105,6 +105,11 @@ section {
 .skill .inner #number {
   font-weight: bolder;
 }
+.skill .circle {
+  fill: none;
+  stroke: var(--blending_blue);
+  stroke-width: 20px;
+}
 
 *,
 ::before,
