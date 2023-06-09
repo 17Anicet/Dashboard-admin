@@ -71,13 +71,13 @@ section{
     }
 }
 .skill{
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     position: relative;
 
     .outer{
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
         border-radius: 50%;
         padding: 10px;
         box-shadow: 1px 1px 4px -1px black,
@@ -104,7 +104,7 @@ section{
         circle{
             fill: none;
             stroke: var(--blending_blue);
-            stroke-width: 10px;
+            stroke-width: 8px;
             stroke-dasharray: 450;
             stroke-dashoffset: 450;
             animation: anim 2s forwards;
