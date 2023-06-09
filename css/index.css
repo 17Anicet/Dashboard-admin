@@ -81,6 +81,18 @@ section {
   align-items: center;
 }
 
+.circular {
+  width: 100px;
+  height: 100px;
+  background-color: var(--black);
+}
+.circular .inner {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--blending_blue);
+}
+
 *,
 ::before,
 ::after {
