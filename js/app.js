@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded',  function(){
         series: [{
             name:'Synopis',
             data:[2.0,0.5,0.3,1.5,0.3,0.6,1.0],
-            color: '#000620'
+            color: '#000620',
         },{
             name:'Total time',
             data: [0.5,1.5,1.0,0.4,1.0,2.0,0.3],
