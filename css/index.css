@@ -155,6 +155,18 @@ section {
   cursor: pointer;
   z-index: 1;
 }
+.wrapper .calendar .days li.inactive {
+  color: var(--shadow1);
+}
+.wrapper .calendar .days li.inactive:hover {
+  color: white;
+}
+.wrapper .calendar .days li.active {
+  color: var(--blending_blue);
+}
+.wrapper .calendar .days li.active::before {
+  background-color: var(--white);
+}
 .wrapper .calendar .days li::before {
   position: absolute;
   content: "";

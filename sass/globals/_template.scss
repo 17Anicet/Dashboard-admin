@@ -142,6 +142,18 @@ section{
                 margin-top: 20px;
                 cursor: pointer;
                 z-index: 1;
+                &.inactive{
+                    color: var(--shadow1);
+                    &:hover{
+                        color: white;
+                    }
+                }
+                &.active{
+                    color: var(--blending_blue);
+                    &::before{
+                        background-color: var(--white);
+                    }
+                }
                 &::before{
                     position: absolute;
                     content: "";
@@ -156,6 +168,7 @@ section{
                 &:hover::before{
                     background-color: var(--shadow1);
                 }
+                
             }
         }
         .week{

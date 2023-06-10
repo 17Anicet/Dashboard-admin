@@ -26,3 +26,5 @@ document.addEventListener('DOMContentLoaded',  function(){
         }]
     });
 });
+
+const currentDate = document.querySelector('.current-date'); 
