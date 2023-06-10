@@ -39,8 +39,9 @@ currMonth = date.getMonth;
 const months = ["January","February","March","April","May", "June", "July", "August","September","November","December"];
 const renderCalendar = () =>{
     let lastDateOfTheMonth = new Date(currYear,currMonth +1, 0).getDate();
+    let liTag ="";
     for (let i = 1; i<=lastDateOfTheMonth; i++){
-        console.log(i);
+        liTag =  ` `;
     }
     currentDate.innerText = `${months[currMonth]} ${currYear}`;
 }
