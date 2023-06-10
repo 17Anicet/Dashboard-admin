@@ -115,5 +115,15 @@ section{
     font-family: u.$font;
     box-shadow: 0px 0px 3px 0px var(--blending_blue);
 }
+.wrapper{
+    width: 450px;
+    .calendar{
+        ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}
 
 
