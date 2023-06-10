@@ -125,12 +125,25 @@ section{
         flex-direction: row;
         padding: 10px;
         justify-content: space-between;
+        .current-date{
+            font-weight: bolder;
+        }
+        i{
+            padding: 5px 8px;
+            border-radius: 50%;
+            cursor: pointer;
+            background-color: var(--shadow1);
+        }
     }
     .calendar{
         ul{
             display: flex;
-            flex-direction: row;
+            flex-direction: row; 
             flex-wrap: wrap;
+            text-align: center;
+        }
+        li{
+            width: calc(100% / 7);
         }
     }
 }

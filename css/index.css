@@ -138,10 +138,23 @@ section {
   padding: 10px;
   justify-content: space-between;
 }
+.wrapper .header .current-date {
+  font-weight: bolder;
+}
+.wrapper .header i {
+  padding: 5px 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--shadow1);
+}
 .wrapper .calendar ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  text-align: center;
+}
+.wrapper .calendar li {
+  width: 14.2857142857%;
 }
 
 *,
