@@ -141,6 +141,21 @@ section{
             li{
                 margin-top: 20px;
                 cursor: pointer;
+                z-index: 1;
+                &::before{
+                    position: absolute;
+                    content: "";
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    top: 50%;
+                    left: 50%;
+                    z-index: -1;
+                    transform: translate(-50%, -50%);
+                }
+                &:hover::before{
+                    background-color: var(--shadow1);
+                }
             }
         }
         .week{
@@ -157,16 +172,6 @@ section{
         li{
             position: relative;
             width: calc(100% / 7);
-        }
-        &::before{
-            position: absolute;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: var(--shadow1);
         }
     }
 }
