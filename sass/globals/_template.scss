@@ -136,6 +136,18 @@ section{
         }
     }
     .calendar{
+        .days{
+            margin-bottom: 20px;
+            li{
+                margin-top: 20px;
+                cursor: pointer;
+            }
+        }
+        .week{
+            li{
+               font-weight: 500; 
+            }
+        }
         ul{
             display: flex;
             flex-direction: row; 
@@ -143,7 +155,15 @@ section{
             text-align: center;
         }
         li{
+            position: relative;
             width: calc(100% / 7);
+        }
+        &::before{
+            position: absolute;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            background-color: var(--shadow1);
         }
     }
 }

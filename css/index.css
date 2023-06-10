@@ -147,6 +147,16 @@ section {
   cursor: pointer;
   background-color: var(--shadow1);
 }
+.wrapper .calendar .days {
+  margin-bottom: 20px;
+}
+.wrapper .calendar .days li {
+  margin-top: 20px;
+  cursor: pointer;
+}
+.wrapper .calendar .week li {
+  font-weight: 500;
+}
 .wrapper .calendar ul {
   display: flex;
   flex-direction: row;
@@ -154,7 +164,15 @@ section {
   text-align: center;
 }
 .wrapper .calendar li {
+  position: relative;
   width: 14.2857142857%;
+}
+.wrapper .calendar::before {
+  position: absolute;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: var(--shadow1);
 }
 
 *,
