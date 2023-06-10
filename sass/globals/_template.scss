@@ -117,6 +117,15 @@ section{
 }
 .wrapper{
     width: 450px;
+    border-radius: 10px;
+    color: var(--white);
+    background-color: var(--blending_blue);
+    .header{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        justify-content: space-between;
+    }
     .calendar{
         ul{
             display: flex;

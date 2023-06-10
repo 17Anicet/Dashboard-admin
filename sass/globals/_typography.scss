@@ -10,8 +10,9 @@
 }
 
 //pour les liens
-a{
+a,ul{
     text-decoration: none;
+    list-style-type: none;
     align-items: center;
 }
 
