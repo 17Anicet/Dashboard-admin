@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded',  function(){
 //getting new date
 
 const currentDate = document.querySelector('.current-date');
+daysTag =document.querySelector('.days');
 
 let date = new Date(),
 currYear = date.getFullYear,
@@ -38,6 +39,9 @@ currMonth = date.getMonth;
 const months = ["January","February","March","April","May", "June", "July", "August","September","November","December"];
 const renderCalendar = () =>{
     let lastDateOfTheMonth = new Date(currYear,currMonth +1, 0).getDate();
+    for (let i = 1; i<=lastDateOfTheMonth; i++){
+        console.log(i);
+    }
     currentDate.innerText = `${months[currMonth]} ${currYear}`;
 }
 renderCalendar();
