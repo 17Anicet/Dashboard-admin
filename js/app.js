@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded',  function(){
-    const chart = Highcharts.chart('container',{
+    const chart = Highcharts.chart('bloc-charts',{
         chart:{
             type: 'column'
         },
