@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded',function(){
         title: {
             text: 'Different colors'
         },
-        colors:['#578756','#000620'],
+        colors:['#578756','#286886','#0000FF','#FFFF00'],
         series: [{
             
                 name:'Data',
