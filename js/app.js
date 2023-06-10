@@ -5,23 +5,23 @@ document.addEventListener('DOMContentLoaded',  function(){
             type: 'column'
         },
         title: {
-            text: 'Fruit consumption'
+            text: 'Attendance',
         },
         xAxis:{
-            categories:['Apples','Bananas','Oranges']
+            categories:['Mon','Tue','Wed','Thur','Fri','Sat','Sun']
         },
         yAxis:{
             title:{
-              text: 'Fruit eaten'  
+              text: 'Hours'  
             }
         },
         series: [{
             
-                name:'Jane',
-                data:[5,20,40]
+                name:'Synopis',
+                data:[2.0,0.5,0.3,1.5,0.3,0.6,1.0]
         },{
-            name:'John',
-            data: [25,32,60]
+            name:'Total time',
+            data: [0.5,1.5,1.0,0.4,1.0,2.0,0.3]
         }]
     });
 });
