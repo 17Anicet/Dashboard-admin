@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded',  function(){
 
 const currentDate = document.querySelector('.current-date');
 daysTag =document.querySelector('.days');
+Icons =document.querySelectorAll('.icons i');
 
 let date = new Date(),
 currYear = date.getFullYear,
@@ -41,8 +42,15 @@ const renderCalendar = () =>{
     let lastDateOfTheMonth = new Date(currYear,currMonth +1, 0).getDate();
     let liTag ="";
     for (let i = 1; i<=lastDateOfTheMonth; i++){
-        liTag =  ` `;
+        liTag +=  `<li>${i}</li> `;
     }
     currentDate.innerText = `${months[currMonth]} ${currYear}`;
+    daysTag.innerHTML = liTag;
 }
 renderCalendar();
+
+Icons.forEach(icon => {
+    icon.addEventListener('click',() =>{
+        console.log(icon);
+    })
+});
