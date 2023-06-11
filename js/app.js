@@ -41,8 +41,14 @@ const months = ["January","February","March","April","May", "June", "July", "Aug
 const renderCalendar = () =>{
     let firstDayOfTheMonth = new Date(currYear,currMonth, 1).getDay(),
     lastDateOfTheMonth = new Date (currYear, currMonth +1, 0).getDate(),
+    lastDateOfLastMonth = new Date (currYear, currMonth, 0).getDate();
 
     let liTag ="";
+
+    for (let i = firstDayOfTheMonth; i>0; i--){
+        liTag +=  `<li class="inactive">${lastDateOfLastMonth - i + 1}</li> `;
+    }
+
     for (let i = 1; i<=lastDateOfTheMonth; i++){
         liTag +=  `<li>${i}</li> `;
     }
