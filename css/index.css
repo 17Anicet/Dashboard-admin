@@ -173,17 +173,19 @@ section {
   align-items: center;
   justify-content: center;
 }
-.calendar .days div .today {
-  color: white;
-  background-color: var(--blending_blue);
-}
-.calendar .days div .prev-date, .calendar .days div .next-date {
-  opacity: 0.5;
-}
 .calendar .days div:hover:not(.today) {
   cursor: pointer;
   color: var(--white);
+  border-radius: 8px;
   background-color: var(--shadow1);
+}
+.calendar .days .today {
+  border-radius: 8px;
+  color: white;
+  background-color: var(--blending_blue);
+}
+.calendar .days .prev-date, .calendar .days .next-date {
+  opacity: 0.5;
 }
 
 *,

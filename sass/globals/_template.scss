@@ -159,18 +159,20 @@ section{
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            .today{
-                color: white;
-                background-color: var(--blending_blue);
-            }
-            .prev-date,.next-date{
-                opacity: 0.5;
-            }
             &:hover:not(.today){
                 cursor: pointer;
                 color: var(--white);
+                border-radius: 8px;
                 background-color: var(--shadow1);
             }
+        }
+        .today{
+            border-radius: 8px;
+            color: white;
+            background-color: var(--blending_blue);
+        }
+        .prev-date,.next-date{
+            opacity: 0.5;
         }
     }
 }
