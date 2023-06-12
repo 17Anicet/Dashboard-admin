@@ -154,6 +154,23 @@ section {
 }
 .calendar .weekdays div {
   width: 57.1428571429px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.calendar .days {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.calendar .days div {
+  width: 57.1428571429px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 *,
