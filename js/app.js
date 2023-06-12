@@ -29,4 +29,4 @@ document.addEventListener('DOMContentLoaded',  function(){
 
 
 const date = new Date();
-console.log(date);
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September","October", "November", "December"];
