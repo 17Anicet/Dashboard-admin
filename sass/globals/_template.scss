@@ -154,6 +154,7 @@ section{
         flex-wrap: wrap;
         div{
             width: calc(400px/7);
+            padding-top: 15px;
             display: flex;
             flex-direction: row;
             align-items: center;

@@ -167,6 +167,7 @@ section {
 }
 .calendar .days div {
   width: 57.1428571429px;
+  padding-top: 15px;
   display: flex;
   flex-direction: row;
   align-items: center;
