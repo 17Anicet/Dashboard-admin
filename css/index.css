@@ -167,11 +167,23 @@ section {
 }
 .calendar .days div {
   width: 57.1428571429px;
-  padding-top: 15px;
+  padding: 8px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+.calendar .days div .today {
+  color: white;
+  background-color: var(--blending_blue);
+}
+.calendar .days div .prev-date, .calendar .days div .next-date {
+  opacity: 0.5;
+}
+.calendar .days div:hover:not(.today) {
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--shadow1);
 }
 
 *,
