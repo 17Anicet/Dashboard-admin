@@ -152,6 +152,9 @@ section {
   align-items: center;
   padding: 8px;
 }
+.calendar .weekdays div {
+  width: 57.1428571429px;
+}
 
 *,
 ::before,
