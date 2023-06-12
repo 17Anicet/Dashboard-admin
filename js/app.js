@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded',  function(){
 
 const date = new Date();
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September","October", "November", "December"];
-const monthDays = document.querySelector(".date");
+const monthDays = document.querySelector(".days");
 
 document.querySelector(".date h4").innerHTML =  months[date.getMonth()];
 document.querySelector(".date p").innerHTML = date.toDateString();
