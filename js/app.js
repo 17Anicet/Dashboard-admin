@@ -37,5 +37,6 @@ document.querySelector(".date p").innerHTML = date.toDateString();
 
 let days = "";
 for (let i=1; i<=30; i++ ){
-
+    days += `<div>${i}</div>`;
+    monthDays.innerHTML = days;
 }
