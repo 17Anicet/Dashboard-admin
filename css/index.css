@@ -126,6 +126,33 @@ section {
   box-shadow: 0px 0px 3px 0px var(--blending_blue);
 }
 
+.calendar {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 0px var(--blending_blue);
+}
+.calendar .month {
+  width: 100%;
+  color: var(--white);
+  background-color: var(--blending_blue);
+  display: flex;
+  flex-direction: row;
+  padding: 8px 12px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.calendar .month i {
+  cursor: pointer;
+}
+.calendar .weekdays {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px;
+}
+
 *,
 ::before,
 ::after {
