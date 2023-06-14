@@ -367,13 +367,24 @@ button:hover a, button:hover i {
   .calendar {
     width: 100%;
   }
-  .calendar .weekdays div {
+  .calendar .weekdays, .calendar .days {
+    width: 100%;
+  }
+  .calendar .weekdays div, .calendar .days div {
     width: 14.2857142857%;
   }
-  /*.container{
-      margin-top: 10px;
-      display: grid;
-      gap: 10px;
-      grid-template-columns: repeat(2, 1fr);
-  }*/
+}
+@media screen and (max-width: 768px) and (max-width: 600px) {
+  .bloc-user {
+    display: flex;
+    flex-direction: column;
+  }
+  .bloc-user .user-notification {
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    border: 1px solid red;
+  }
 }/*# sourceMappingURL=index.css.map */
