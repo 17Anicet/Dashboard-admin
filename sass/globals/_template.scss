@@ -260,22 +260,21 @@ section{
         padding: 10px;
         border-radius: 10px;
         color: white;
+        justify-content: center;
         background-color: var(--blending_blue);
         .lecture-item{
             @include display_flex;
             align-items: center;
             p img{
-                width: 60px;
-                height: 60px;
+                width: 30px;
+                height: 30px;
                 object-fit: cover;
             }
         }
         .lecture-number{
             @include display_flex;
-            align-items: center;
-            justify-content: flex-end;
             a{
-                font-size: 30px;
+                font-size: 20px;
                 color: var(--shadow1);
             }
         }

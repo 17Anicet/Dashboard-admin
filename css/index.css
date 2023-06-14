@@ -275,6 +275,7 @@ section {
   padding: 10px;
   border-radius: 10px;
   color: white;
+  justify-content: center;
   background-color: var(--blending_blue);
 }
 .lecture .lecture-content .lecture-item {
@@ -284,19 +285,17 @@ section {
   align-items: center;
 }
 .lecture .lecture-content .lecture-item p img {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   object-fit: cover;
 }
 .lecture .lecture-content .lecture-number {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  align-items: center;
-  justify-content: flex-end;
 }
 .lecture .lecture-content .lecture-number a {
-  font-size: 30px;
+  font-size: 20px;
   color: var(--shadow1);
 }
 
