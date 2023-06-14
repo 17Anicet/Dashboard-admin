@@ -15,13 +15,7 @@
         display: grid;
         grid-template-columns: auto;
     }
-    .calendar{
-        margin-top: 20px;
-        width: 100%;
-        .weekdays{
-            div{
-                width: calc(100%/7);
-            }
-        }
+    .container{
+        margin-top: 10px;
     }
 }

@@ -364,11 +364,7 @@ button:hover a, button:hover i {
     display: grid;
     grid-template-columns: auto;
   }
-  .calendar {
-    margin-top: 20px;
-    width: 100%;
-  }
-  .calendar .weekdays div {
-    width: 14.2857142857%;
+  .container {
+    margin-top: 10px;
   }
 }/*# sourceMappingURL=index.css.map */
