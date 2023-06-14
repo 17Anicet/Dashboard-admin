@@ -293,6 +293,7 @@ section {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  margin-top: 15px;
   align-items: center;
   justify-content: center;
 }
@@ -383,5 +384,10 @@ button:hover a, button:hover i {
   }
   .bloc-user .user-notification {
     justify-content: flex-end;
+  }
+}
+@media screen and (max-width: 480px) and (max-width: 370px) {
+  .lecture {
+    display: grid;
   }
 }/*# sourceMappingURL=index.css.map */

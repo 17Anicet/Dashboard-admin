@@ -41,6 +41,10 @@
 }
 
 @include u.breakpoint(mobile){
-    
+    @media screen and (max-width: 370px){
+        .lecture{
+            display: grid;
+        }
+    }
 
 }

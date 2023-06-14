@@ -273,6 +273,7 @@ section{
         }
         .lecture-number{
             @include display_flex;
+            margin-top: 15px;
             align-items: center;
             justify-content: center;
             a{
