@@ -1,11 +1,10 @@
 @use "../utils/" as u;
-@use "../utils/font" as f;
 @use "../utils/mixins" as *;
 
 body{
     width: 100%;
     height: 100vh;
-    font-family: f.$font;
+    font-family: u.$font;
     background-color: var(--white);
 }
 
