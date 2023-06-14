@@ -83,11 +83,9 @@ section{
 }
 
 .progress-circle-bar{
-    display: flex;
-    flex-direction: row;
+    @include display_flex;
     justify-content: space-between;
     text-align: center;
-    gap: 20px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 3px 0px var(--blending_blue);
