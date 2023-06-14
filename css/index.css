@@ -348,4 +348,27 @@ button:hover {
 button:hover a, button:hover i {
   color: var(--black);
   font-weight: bolder;
+}
+
+@media (max-width: 1024px) {
+  .bloc-nav {
+    display: none;
+  }
+  section {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+@media (max-width: 768px) {
+  .bloc-containers {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .calendar {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .calendar .weekdays div {
+    width: 14.2857142857%;
+  }
 }/*# sourceMappingURL=index.css.map */

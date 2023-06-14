@@ -1,0 +1,27 @@
+@use '../utils' as u;
+
+@include u.breakpoint(desktop){
+    .bloc-nav{
+        display: none;
+    }
+    section{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+@include u.breakpoint(tablet){
+    .bloc-containers{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .calendar{
+        margin-top: 20px;
+        width: 100%;
+        .weekdays{
+            div{
+                width: calc(100%/7);
+            }
+        }
+    }
+}
