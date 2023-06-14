@@ -254,7 +254,10 @@ section{
 }
 
 .lecture{
+    @include display_flex;
     .lecture-content{
+        width: 100%;
+        margin-top: 10px;
         padding: 10px;
         border-radius: 10px;
         color: white;
