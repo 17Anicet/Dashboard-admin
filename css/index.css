@@ -366,5 +366,8 @@ button:hover a, button:hover i {
   }
   .container {
     margin-top: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }/*# sourceMappingURL=index.css.map */
