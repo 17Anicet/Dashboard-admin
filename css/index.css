@@ -367,7 +367,7 @@ button:hover a, button:hover i {
   .calendar {
     width: 100%;
   }
-  .calendar .weekdays div, .calendar .days div {
+  .calendar .weekdays div {
     width: 14.2857142857%;
   }
   /*.container{
