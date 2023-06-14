@@ -145,17 +145,18 @@ section{
 
 .calendar{
     width: 400px;
+    margin: auto;
     border-radius: 10px;
     box-shadow: 0px 0px 3px 0px var(--blending_blue);
     .month{
         width: 100%;
         color: var(--white);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         background-color: var(--blending_blue);
         display: flex;
         flex-direction: row;
         padding: 12px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
         text-align: center;
         align-items: center;
         justify-content: space-between;
