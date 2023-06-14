@@ -382,9 +382,4 @@ button:hover a, button:hover i {
   .bloc-user .user-notification {
     justify-content: flex-end;
   }
-}
-@media (max-width: 480px) {
-  body {
-    border: 1px solid red;
-  }
 }/*# sourceMappingURL=index.css.map */
