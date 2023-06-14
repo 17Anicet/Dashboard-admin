@@ -75,10 +75,10 @@ section{
     display: grid;
     grid-template-columns: auto auto;
     margin-top: 20px;
-    column-gap: 20px;
+    column-gap: 10px;
     .items-content-bar{
         display: grid;
-        gap: 20px;
+        gap: 10px;
     }
 }
 
@@ -86,7 +86,7 @@ section{
     @include display_flex;
     justify-content: space-between;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 0px 3px 0px var(--blending_blue);
     @keyframes progress {
@@ -96,7 +96,7 @@ section{
     }
       .circle-svg {
         display: block;
-        max-height: 70px;
+        max-height: 60px;
     }
       .circle-svg text {
         text-align:center;
