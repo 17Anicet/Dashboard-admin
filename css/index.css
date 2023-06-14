@@ -19,7 +19,6 @@ section {
 }
 
 .bloc-nav {
-  height: 100vh;
   background-color: var(--blending_blue);
 }
 .bloc-nav nav .dashboard {
