@@ -260,10 +260,10 @@ section{
         padding: 10px;
         border-radius: 10px;
         color: white;
-        justify-content: center;
         background-color: var(--blending_blue);
         .lecture-item{
             @include display_flex;
+            justify-content: center;
             align-items: center;
             p img{
                 width: 30px;
@@ -273,6 +273,8 @@ section{
         }
         .lecture-number{
             @include display_flex;
+            align-items: center;
+            justify-content: center;
             a{
                 font-size: 20px;
                 color: var(--shadow1);

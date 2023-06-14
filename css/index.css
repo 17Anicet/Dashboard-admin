@@ -275,13 +275,13 @@ section {
   padding: 10px;
   border-radius: 10px;
   color: white;
-  justify-content: center;
   background-color: var(--blending_blue);
 }
 .lecture .lecture-content .lecture-item {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  justify-content: center;
   align-items: center;
 }
 .lecture .lecture-content .lecture-item p img {
@@ -293,6 +293,8 @@ section {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 .lecture .lecture-content .lecture-number a {
   font-size: 20px;
