@@ -15,10 +15,17 @@
         display: grid;
         grid-template-columns: auto;
     }
-    .container{
+
+    .calendar{
+        width: 100%;
+        .weekdays div, .days div{
+            width: calc(100%/7);
+        }
+    }
+    /*.container{
         margin-top: 10px;
         display: grid;
         gap: 10px;
         grid-template-columns: repeat(2, 1fr);
-    }
+    }*/
 }

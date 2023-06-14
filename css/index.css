@@ -190,7 +190,7 @@ section {
   justify-content: center;
 }
 .calendar .days {
-  width: 100%;
+  width: 400px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -364,10 +364,16 @@ button:hover a, button:hover i {
     display: grid;
     grid-template-columns: auto;
   }
-  .container {
-    margin-top: 10px;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
+  .calendar {
+    width: 100%;
   }
+  .calendar .weekdays div, .calendar .days div {
+    width: 14.2857142857%;
+  }
+  /*.container{
+      margin-top: 10px;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
+  }*/
 }/*# sourceMappingURL=index.css.map */
