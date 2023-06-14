@@ -386,7 +386,11 @@ button:hover a, button:hover i {
     justify-content: flex-end;
   }
 }
-@media screen and (max-width: 480px) and (max-width: 370px) {
+@media screen and (max-width: 480px) and (max-width: 380px) {
+  .bloc-charts {
+    width: 130%;
+    overflow: auto;
+  }
   .lecture {
     display: grid;
   }
