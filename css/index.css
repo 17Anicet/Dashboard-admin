@@ -108,7 +108,7 @@ section {
 }
 .progress-circle-bar .circle-svg {
   display: block;
-  max-height: 80px;
+  max-height: 70px;
 }
 .progress-circle-bar .circle-svg text {
   text-align: center;
