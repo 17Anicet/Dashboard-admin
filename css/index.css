@@ -80,11 +80,21 @@ section {
   align-items: center;
 }
 
+.bloc-containers {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 20px;
+  column-gap: 20px;
+}
+.bloc-containers .items-content-bar {
+  display: grid;
+  gap: 20px;
+}
+
 .progress-circle-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 20px;
   text-align: center;
   gap: 20px;
   padding: 20px;
@@ -103,32 +113,50 @@ section {
 .progress-circle-bar .circle-svg text {
   text-align: center;
   color: black;
-  font-size: 10px;
+  font-size: 8px;
 }
 .progress-circle-bar .circle-svg path.percent {
   stroke: var(--blending_blue);
   fill: none;
-  stroke-width: 2.8;
+  stroke-width: 2.5;
   stroke-linecap: round;
   animation: progress 1s ease-out forwards;
 }
 .progress-circle-bar .circle-svg path.around {
   stroke: #c4c4c4;
   fill: none;
-  stroke-width: 2.8;
+  stroke-width: 2.5;
 }
 
 #bloc-charts {
-  width: 600px;
-  margin-top: 20px;
+  height: 300px;
   border-radius: 10px;
   font-family: "Sen", sans-serif;
   box-shadow: 0px 0px 3px 0px var(--blending_blue);
 }
 
+.event {
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 3px 0px var(--blending_blue);
+}
+.event .event-content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.event .event-content div {
+  width: 100%;
+  padding: 20px;
+  margin-top: 5px;
+  text-align: center;
+  color: var(--white);
+  border-radius: 10px;
+  background-color: var(--blending_blue);
+}
+
 .calendar {
   width: 400px;
-  height: 270px;
   border-radius: 10px;
   box-shadow: 0px 0px 3px 0px var(--blending_blue);
 }
@@ -138,7 +166,9 @@ section {
   background-color: var(--blending_blue);
   display: flex;
   flex-direction: row;
-  padding: 8px 12px;
+  padding: 12px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   text-align: center;
   align-items: center;
   justify-content: space-between;
@@ -186,6 +216,52 @@ section {
 }
 .calendar .days .prev-date, .calendar .days .next-date {
   opacity: 0.5;
+}
+
+.robotic-prototybe-design {
+  display: grid;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.item-robotic, .item-prototype, .item-web-desing-lesson {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 3px 0px var(--blending_blue);
+  color: var(--white);
+  background-color: var(--blending_blue);
+}
+.item-robotic .item-content, .item-prototype .item-content, .item-web-desing-lesson .item-content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+}
+.item-robotic .item, .item-prototype .item, .item-web-desing-lesson .item {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.item-robotic .item div, .item-prototype .item div, .item-web-desing-lesson .item div {
+  border-left: 2px solid var(--white);
+}
+.item-robotic .item div h4, .item-prototype .item div h4, .item-web-desing-lesson .item div h4, .item-robotic .item div a, .item-prototype .item div a, .item-web-desing-lesson .item div a {
+  margin-left: 10px;
+}
+.item-robotic .item div a, .item-prototype .item div a, .item-web-desing-lesson .item div a {
+  color: var(--shadow1);
+}
+.item-robotic p, .item-prototype p, .item-web-desing-lesson p {
+  align-self: flex-end;
+}
+
+.item-prototype, .item-web-desing-lesson {
+  color: var(--black);
+  background-color: var(--white);
+}
+.item-prototype .item div, .item-web-desing-lesson .item div {
+  border-left: 2px solid var(--black);
 }
 
 *,

@@ -38,10 +38,11 @@ const renderCalendar = () =>{
     const prevLastDay = new Date(date.getFullYear(), date.getMonth(), 0).getDate();
     const firstDayIndex = date.getDay();
     const lastDayIndex = new Date(date.getFullYear(), date.getMonth()+1, 0).getDay();
-    const nextDays = 6 - lastDayIndex +1;
+    const nextDays = 5 - lastDayIndex +1;
 
 
     document.querySelector(".date h4").innerHTML =  months[date.getMonth()];
+    document.querySelector(".date p").innerHTML = date.getFullYear();
 
     let days = "";
 
