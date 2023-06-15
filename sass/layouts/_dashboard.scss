@@ -45,12 +45,11 @@
         .lecture{
             display: grid;
         }
-        section{
-            width: 100%;
-        }
-        #bloc-charts{
-            width: 130%;
+        .bloc-chart{
             overflow: auto;
+            #bloc-charts{
+                width: 120%;
+            }
         }
     }
 
