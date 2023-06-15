@@ -45,6 +45,13 @@
         .lecture{
             display: grid;
         }
+        section{
+            width: 100%;
+        }
+        #bloc-charts{
+            width: 130%;
+            overflow: auto;
+        }
     }
 
 }

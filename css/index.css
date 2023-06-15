@@ -390,4 +390,11 @@ button:hover a, button:hover i {
   .lecture {
     display: grid;
   }
+  section {
+    width: 100%;
+  }
+  #bloc-charts {
+    width: 130%;
+    overflow: auto;
+  }
 }/*# sourceMappingURL=index.css.map */
