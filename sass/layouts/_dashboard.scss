@@ -42,10 +42,6 @@
 
 @include u.breakpoint(mobile){
     @media screen and (max-width: 380px){
-        .bloc-charts{
-            width: 130%;
-            overflow: auto;
-        }
         .lecture{
             display: grid;
         }

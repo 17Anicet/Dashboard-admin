@@ -387,10 +387,6 @@ button:hover a, button:hover i {
   }
 }
 @media screen and (max-width: 480px) and (max-width: 380px) {
-  .bloc-charts {
-    width: 130%;
-    overflow: auto;
-  }
   .lecture {
     display: grid;
   }
