@@ -20,10 +20,10 @@ section {
   grid-template-columns: 20% auto;
 }
 
-.bloc-nav {
+.bloc-nav, .nav-links, .nav_bloc .bar_menu, .nav_bloc {
   background-color: var(--blending_blue);
 }
-.bloc-nav nav .dashboard {
+.bloc-nav nav .dashboard, .nav-links nav .dashboard, .nav_bloc nav .dashboard {
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -33,10 +33,10 @@ section {
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
-.bloc-nav nav .dashboard a, .bloc-nav nav .dashboard i {
+.bloc-nav nav .dashboard a, .nav-links nav .dashboard a, .nav_bloc nav .dashboard a, .bloc-nav nav .dashboard i, .nav-links nav .dashboard i, .nav_bloc nav .dashboard i {
   color: var(--black);
 }
-.bloc-nav nav div {
+.bloc-nav nav div, .nav-links nav div, .nav_bloc .bar_menu nav div, .nav_bloc nav div {
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -46,20 +46,55 @@ section {
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
-.bloc-nav nav div:hover {
+.bloc-nav nav div:hover, .nav-links nav div:hover, .nav_bloc nav div:hover {
   background-color: var(--white);
   transition: 0.5s;
   color: black;
 }
-.bloc-nav nav div:hover a, .bloc-nav nav div:hover i {
+.bloc-nav nav div:hover a, .nav-links nav div:hover a, .nav_bloc nav div:hover a, .bloc-nav nav div:hover i, .nav-links nav div:hover i, .nav_bloc nav div:hover i {
   color: var(--black);
 }
-.bloc-nav nav div a, .bloc-nav nav div i {
+.bloc-nav nav div a, .nav-links nav div a, .nav_bloc .bar_menu nav div a, .nav_bloc nav div a, .bloc-nav nav div i, .nav-links nav div i, .nav_bloc .bar_menu nav div i, .nav_bloc nav div i {
   color: var(--white);
+}
+
+.nav_bloc {
+  display: none;
+}
+.nav_bloc .bar_menu {
+  position: absolute;
+  margin-top: 65px;
+  margin-left: -200px;
+  transition: all 0.5s ease;
+  box-shadow: 0px 0px 3px 0px var(--black);
+  width: 200px;
+  height: 100vh;
+  display: inline;
+  z-index: 10;
+  border-top-left-radius: 10px;
+}
+.nav_bloc .bar_menu.mobile-menu {
+  margin-left: 15px;
 }
 
 .bloc-item {
   padding: 15px;
+}
+
+.nav-links {
+  position: absolute;
+  top: 50px;
+  z-index: 5;
+  height: 100vh;
+  width: fit-content;
+  border: 10px solid red;
+}
+.nav-links .active {
+  margin-left: 0;
+}
+.nav-links button {
+  position: relative;
+  top: -100px;
 }
 
 .bloc-user {
@@ -79,6 +114,9 @@ section {
   gap: 10px;
   gap: 10px;
   align-items: center;
+}
+.bloc-user .user_search {
+  margin-left: 50px;
 }
 
 .bloc-containers {
@@ -312,6 +350,10 @@ section {
   box-sizing: border-box;
 }
 
+.icon {
+  font-size: 2rem;
+}
+
 a, ul {
   text-decoration: none;
   list-style-type: none;
@@ -322,6 +364,10 @@ input {
   border: none;
   outline: none;
   font-family: "Sen", sans-serif;
+}
+
+i {
+  cursor: pointer;
 }
 
 p img {
@@ -355,6 +401,21 @@ button:hover a, button:hover i {
 }
 
 @media (max-width: 1024px) {
+  .nav_bloc {
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .nav_bloc .icon {
+    position: absolute;
+    margin-left: 23px;
+    margin-top: 17px;
+    font-size: 1.5rem;
+  }
+  .nav_bloc button {
+    margin-top: 120px;
+  }
   .bloc-nav {
     display: none;
   }
@@ -386,6 +447,12 @@ button:hover a, button:hover i {
   }
   .bloc-user .user-notification {
     justify-content: flex-end;
+  }
+  .bar_menu {
+    top: 38px;
+  }
+  .user {
+    width: 100%;
   }
 }
 @media screen and (max-width: 480px) and (max-width: 380px) {

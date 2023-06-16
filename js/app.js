@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded',  function(){
     });
 });
 
-
 const date = new Date();
 
 const renderCalendar = () =>{

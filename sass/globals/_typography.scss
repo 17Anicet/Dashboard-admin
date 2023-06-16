@@ -8,7 +8,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.icon{
+    font-size: 2rem;
+}
 //pour les liens
 a,ul{
     text-decoration: none;
@@ -21,6 +23,10 @@ input{
     border: none;
     outline: none;
     font-family: u.$font;
+}
+
+i{
+    cursor: pointer;
 }
 
 //pour les images

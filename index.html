@@ -13,6 +13,39 @@
     <title>Dashboard pour administrateur</title>
 </head>
 <body>
+    <div class="nav_bloc">
+          <i class="fa-solid fa-bars icon"></i>
+        <nav class="bar_menu">
+            <div class="dashboard">
+                <i class="fa-solid fa-gauge-simple-high"></i>
+                <a href="#">Dashboard</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <a href="#">My Classes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <a href="#">Teachers</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <a href="#">Schedule</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-book-open-reader"></i>
+                <a href="#">Messages</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-bullhorn"></i>
+                <a href="#">Settings</a>
+            </div>
+            <button>
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <a href="#">Log Out</a>
+            </button>
+        </nav>
+    </div>
     <section>
         <div class="bloc-nav">
             <nav>
@@ -48,8 +81,7 @@
         </div>
         <div class="bloc-item">
             <div class="bloc-user">
-                <div>
-                    <h4>Hello, Yusuf</h4>
+                <div class="user_search">
                     <div class="user">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <input type="search" placeholder="search">
@@ -102,7 +134,7 @@
                             </svg>
                         </div>
                     </div>
-
+                    
                     <div class="bloc-chart">
                         <div id="bloc-charts"></div>
                     </div>
@@ -221,4 +253,12 @@
 
     <script src="js/app.js"></script>
 </body>
+<script>
+    const icon = document.querySelector(".icon")
+    const barMenu = document.querySelector(".bar_menu")
+
+    icon .addEventListener('click',()=>{
+    barMenu.classList.toggle('mobile-menu')
+    })
+</script>
 </html>
