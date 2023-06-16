@@ -115,9 +115,6 @@ section {
   gap: 10px;
   align-items: center;
 }
-.bloc-user .user_search {
-  margin-left: 50px;
-}
 
 .bloc-containers {
   display: grid;
@@ -422,6 +419,9 @@ button:hover a, button:hover i {
   section {
     display: grid;
     grid-template-columns: auto;
+  }
+  .user_search {
+    margin-left: 50px;
   }
 }
 @media (max-width: 768px) {
