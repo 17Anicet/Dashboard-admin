@@ -27,6 +27,18 @@ document.addEventListener('DOMContentLoaded',  function(){
     });
 });
 
+
+
+const icon = document.querySelector(".icon")
+    const barMenu = document.querySelector(".bar_menu")
+
+    icon .addEventListener('click',()=>{
+    barMenu.classList.toggle('mobile-menu')
+    })
+
+
+
+
 const date = new Date();
 
 const renderCalendar = () =>{
