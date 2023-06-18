@@ -73,25 +73,6 @@ section{
     padding: 15px;
 }
 
-.nav-links{
-    position: absolute;
-    top: 50px;
-    z-index: 5;
-    height: 100vh;
-    width: fit-content;
-    border: 10px solid red;
-
-    .active{
-        margin-left: 0;
-    }
-
-    button{
-        position: relative;
-        top: -100px;
-    }
-    @extend .bloc-nav;
-}
-
 .bloc-user{
     @include display_flex;
     justify-content: space-between;
@@ -213,8 +194,8 @@ section{
     }
     .days{
         width: 400px;
-        display: flex;
-        flex-direction: row;
+        @include display_flex;
+        gap: 0;
         flex-wrap: wrap;
         div{
             width: calc(400px/7);
