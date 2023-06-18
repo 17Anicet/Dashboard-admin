@@ -174,18 +174,16 @@ section{
         background-color: var(--blending_blue);
         display: flex;
         flex-direction: row;
-        padding: 12px;
         text-align: center;
         align-items: center;
         justify-content: space-between;
+        padding: 12px;
         i{
             cursor: pointer;
         }
     }
     .weekdays{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        @include center_elements;
         padding: 8px;
         div{
             width: calc(400px/7);
@@ -276,9 +274,8 @@ section{
         color: white;
         background-color: var(--blending_blue);
         .lecture-item{
-            @include display_flex;
-            justify-content: center;
-            align-items: center;
+            @include center_elements;
+            gap: 10px;
             p img{
                 width: 30px;
                 height: 30px;

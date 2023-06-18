@@ -190,10 +190,10 @@ section {
   background-color: var(--blending_blue);
   display: flex;
   flex-direction: row;
-  padding: 12px;
   text-align: center;
   align-items: center;
   justify-content: space-between;
+  padding: 12px;
 }
 .calendar .month i {
   cursor: pointer;
@@ -202,6 +202,7 @@ section {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding: 8px;
 }
 .calendar .weekdays div {
@@ -304,9 +305,9 @@ section {
 .lecture .lecture-content .lecture-item {
   display: flex;
   flex-direction: row;
-  gap: 10px;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 .lecture .lecture-content .lecture-item p img {
   width: 30px;
