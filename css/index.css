@@ -450,6 +450,7 @@ button:hover a, button:hover i {
   }
   .lecture {
     display: grid;
+    gap: 0;
   }
   .bloc-chart {
     overflow: auto;
