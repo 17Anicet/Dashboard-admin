@@ -228,7 +228,7 @@ section{
     color: var(--white);
     background-color: var(--blending_blue);
     .item-content{
-        @include display_flex;
+        @include center_elements;
         justify-content: space-between;
     }
     .item{
@@ -284,6 +284,7 @@ section{
         }
         .lecture-number{
             @include center_elements;
+            gap: 10px;
             margin-top: 15px;
             a{
                 font-size: 20px;
