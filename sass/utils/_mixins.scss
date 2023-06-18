@@ -6,6 +6,12 @@
     gap: 10px;
 }
 
+@mixin center_elements{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
 @mixin extern_design{
     padding: 10px;
