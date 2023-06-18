@@ -114,9 +114,9 @@ section {
 .progress-circle-bar {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
   justify-content: space-between;
-  text-align: center;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 0px 3px 0px var(--blending_blue);
@@ -129,6 +129,7 @@ section {
 .progress-circle-bar .circle-svg {
   display: block;
   max-height: 60px;
+  margin: auto;
 }
 .progress-circle-bar .circle-svg text {
   text-align: center;
