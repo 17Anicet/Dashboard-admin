@@ -283,10 +283,8 @@ section{
             }
         }
         .lecture-number{
-            @include display_flex;
+            @include center_elements;
             margin-top: 15px;
-            align-items: center;
-            justify-content: center;
             a{
                 font-size: 20px;
                 color: var(--shadow1);

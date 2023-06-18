@@ -317,10 +317,9 @@ section {
 .lecture .lecture-content .lecture-number {
   display: flex;
   flex-direction: row;
-  gap: 10px;
-  margin-top: 15px;
   align-items: center;
   justify-content: center;
+  margin-top: 15px;
 }
 .lecture .lecture-content .lecture-number a {
   font-size: 20px;
