@@ -69,12 +69,13 @@
 
 @include u.breakpoint(mobile){
     @media screen and (max-width: 380px){
-        #first-child{
-        }
-        #second-child{
-            display: grid;
-            margin-top: 90px;
-        }
+            .progress-circle-bar{
+                align-items: start;
+                #second-child{
+                    margin-top: 60px;
+                }
+            }
+       
         .lecture{
             display: grid;
             gap: 0;
