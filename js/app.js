@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded',  function(){
 
 
 
-const icon = document.querySelector(".icon")
+const icon = document.querySelector(".icon-menu")
     const barMenu = document.querySelector(".bar_menu")
 
     icon .addEventListener('click',()=>{
