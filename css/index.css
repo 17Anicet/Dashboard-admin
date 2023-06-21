@@ -446,12 +446,9 @@ button:hover a, button:hover i {
   }
 }
 @media screen and (max-width: 480px) and (max-width: 380px) {
-  .progress-circle-bar {
+  #second-child {
     display: grid;
-    grid-template-columns: auto auto;
-  }
-  .progress-circle-bar .third-child {
-    justify-self: center;
+    margin-top: 90px;
   }
   .lecture {
     display: grid;
